@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="images/img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/img/icons/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff" />
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+
+  <!-- Add additional services that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC1MRq5XBw0whvZELSmsD_E3AI_JrwBB54",
+    authDomain: "simple-note-app-54b61.firebaseapp.com",
+    databaseURL: "https://simple-note-app-54b61.firebaseio.com",
+    projectId: "simple-note-app-54b61",
+    storageBucket: "simple-note-app-54b61.appspot.com",
+    messagingSenderId: "723759996435"
+  };
+  firebase.initializeApp(config);
+
+
+
+  </script>
+
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.4.1/firebaseui.css" />
+</head>
+
+<body>
+  <header>
+    <h1>To-Do</h1><!-- 
+    <select id="sources"></select> -->
+  </header>
+  <main>
+
+      <div id="firebaseui-auth-container"></div>
+      <div id="welcome"></div>
+      <div id="todos"></div>
+      <div id="logout"></div>
+
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
