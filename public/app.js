@@ -183,7 +183,7 @@ var attachHandlersToTextBoxes = function() {
             
             
           }
-        },250));
+        },2000));
       }
       console.log("attachHandlersToTextBoxes")
 }

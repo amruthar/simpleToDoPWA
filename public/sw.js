@@ -1,4 +1,4 @@
-const cacheName = 'news-v1';
+const cacheName = 'todo-app-cache';
 
 const staticAssets = [
   './',
